@@ -14,7 +14,7 @@ namespace PioneerTech.Consultancy.Sys
     public partial class EmployeeDashboard : Form
     {
 
-        private int _employeeId;
+        private readonly int _employeeId;
         public EmployeeDashboard()
         {
             InitializeComponent();
@@ -26,7 +26,6 @@ namespace PioneerTech.Consultancy.Sys
            InitializeComponent();
             _employeeId = employeeId;
             gridDisplay();
-
 
         }
         private void gridViewEmployee_CellContentClick(object sender, DataGridViewCellEventArgs e)
