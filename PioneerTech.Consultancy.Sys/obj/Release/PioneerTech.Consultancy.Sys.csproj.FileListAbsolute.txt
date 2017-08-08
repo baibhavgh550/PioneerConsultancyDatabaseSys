@@ -1,8 +1,10 @@
 C:\Users\Baibhav\documents\visual studio 2017\Projects\PioneerTech.Consultancy.Sys\PioneerTech.Consultancy.Sys\bin\Release\PioneerTech.Consultancy.Sys.exe.config
 C:\Users\Baibhav\documents\visual studio 2017\Projects\PioneerTech.Consultancy.Sys\PioneerTech.Consultancy.Sys\bin\Release\PioneerTech.Consultancy.Sys.exe
 C:\Users\Baibhav\documents\visual studio 2017\Projects\PioneerTech.Consultancy.Sys\PioneerTech.Consultancy.Sys\bin\Release\PioneerTech.Consultancy.Sys.pdb
-C:\Users\Baibhav\documents\visual studio 2017\Projects\PioneerTech.Consultancy.Sys\PioneerTech.Consultancy.Sys\obj\Release\PioneerTech.Consultancy.Sys.Form1.resources
 C:\Users\Baibhav\documents\visual studio 2017\Projects\PioneerTech.Consultancy.Sys\PioneerTech.Consultancy.Sys\obj\Release\PioneerTech.Consultancy.Sys.Properties.Resources.resources
 C:\Users\Baibhav\documents\visual studio 2017\Projects\PioneerTech.Consultancy.Sys\PioneerTech.Consultancy.Sys\obj\Release\PioneerTech.Consultancy.Sys.csproj.GenerateResource.Cache
 C:\Users\Baibhav\documents\visual studio 2017\Projects\PioneerTech.Consultancy.Sys\PioneerTech.Consultancy.Sys\obj\Release\PioneerTech.Consultancy.Sys.exe
 C:\Users\Baibhav\documents\visual studio 2017\Projects\PioneerTech.Consultancy.Sys\PioneerTech.Consultancy.Sys\obj\Release\PioneerTech.Consultancy.Sys.pdb
+C:\Users\Baibhav\documents\visual studio 2017\Projects\PioneerTech.Consultancy.Sys\PioneerTech.Consultancy.Sys\obj\Release\PioneerTech.Consultancy.Sys.csprojResolveAssemblyReference.cache
+C:\Users\Baibhav\documents\visual studio 2017\Projects\PioneerTech.Consultancy.Sys\PioneerTech.Consultancy.Sys\obj\Release\PioneerTech.Consultancy.Sys.EmployeeInformationForm.resources
+C:\Users\Baibhav\documents\visual studio 2017\Projects\PioneerTech.Consultancy.Sys\PioneerTech.Consultancy.Sys\obj\Release\PioneerTech.Consultancy.Sys.MainForm.resources
