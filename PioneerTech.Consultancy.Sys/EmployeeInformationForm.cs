@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using MyClassLibraryProject.Model;
+using PioneerTech.Consultancy.DAL;
+using PioneerTech.Models.Model;
 
 
 namespace PioneerTech.Consultancy.Sys
@@ -34,11 +37,9 @@ namespace PioneerTech.Consultancy.Sys
                 while (dr.Read())
                 {
                     employeeIDComboBox.Items.Add(dr[0]);
-                    employeeIDCompany.Items.Add(dr[0]);
+                    EmployeeIdComboBoxTextBox.Items.Add(dr[0]);
                     EmployeeIdTechnicalComboBox.Items.Add(dr[0]);
                     EmployeeIdEducationComboBox.Items.Add(dr[0]);
-
-
                 }
 
             }
@@ -71,50 +72,24 @@ namespace PioneerTech.Consultancy.Sys
 
         private void save_Click(object sender, EventArgs e)
         {
-            var firstName = textBoxFirstName.Text;
-            var lastName = textBoxLastName.Text;
-            var email = textBoxEmail.Text;
-            var mobileNumber = Convert.ToInt64(textBoxMobile.Text);
-            var alternateMobile = Convert.ToInt64(textBoxAlternateMobile.Text);
-            var address1 = textBoxAddress1.Text;
-            var address2 = textBoxAddress2.Text;
-            var homeCountry = textBoxHomeCountry.Text;
-            var currentCountry = textBoxCurrentCountry.Text;
-            var zipCode = Convert.ToInt64(textBoxZipCode.Text);
-
-            var conn = new SqlConnection();
-            conn.ConnectionString =
-                "Data Source=BAIBHAV;" +
-                "Initial Catalog=PioneerConsultancyDatabase;" +
-                "Integrated security = True;";
-
-
-            using (var com = conn.CreateCommand())
+            var employeeModel = new EmployeeModel()
             {
-                com.CommandText = "INSERT INTO EmployeeDetail" +
-                                  "(FirstName, LastName, Email, ContactNumber, AlternateContactNumber, [Address], AlternateAddress, CurrentCountry, HomeCountry, Zipcode) " +
-                                  "VALUES " +
-                                  "(@firstName,@lastName,@email,@mobileNumber,@alternateMobile,@address1,@address2,@currentCountry,@homeCountry,@zipCode)";
+                FirstName = textBoxFirstName.Text,
+                LastName = textBoxLastName.Text,
+                EmailId = textBoxEmail.Text,
+                MobileNumber = Convert.ToInt64(textBoxMobile.Text),
+                AlternateMobile = Convert.ToInt64(textBoxAlternateMobile.Text),
+                Address1 = textBoxAddress1.Text,
+                Address2 = textBoxAddress2.Text,
+                HomeCountry = textBoxHomeCountry.Text,
+                CurrentCountry = textBoxCurrentCountry.Text,
+                ZipCode = Convert.ToInt64(textBoxZipCode.Text)
+            };
 
-                com.Parameters.AddWithValue("@firstName", firstName);
-                com.Parameters.AddWithValue("@lastName", lastName);
-                com.Parameters.AddWithValue("@email", email);
-                com.Parameters.AddWithValue("@mobileNumber", mobileNumber);
-                com.Parameters.AddWithValue("@alternateMobile", alternateMobile);
-                com.Parameters.AddWithValue("@address1", address1);
-                com.Parameters.AddWithValue("@address2", address2);
-                com.Parameters.AddWithValue("@currentCountry", currentCountry);
-                com.Parameters.AddWithValue("@homeCountry", homeCountry);
-                com.Parameters.AddWithValue("@zipCode", zipCode);
-                conn.Open();
+            var employeeDataAccessLayer = new EmployeeDataAccessLayer();
+            var result = employeeDataAccessLayer.SaveEmployeeDetails(employeeModel);
 
-                var result = com.ExecuteNonQuery();
-
-                MessageBox.Show(result > 0 ? "Message Saved Successfully" : "Message Did NOT Saved Successfully");
-
-                conn.Close();
-
-            }
+            MessageBox.Show(result > 0 ? "Message Saved Successfully" : "Message Did NOT Saved Successfully");
 
         }
 
@@ -135,82 +110,43 @@ namespace PioneerTech.Consultancy.Sys
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-           
-        }
 
-     
-            
-        
+        }
 
         private void buttonSave_Click(object sender, EventArgs e)
         {
-            var projectName = projectNameTextBox.Text;
-            var clientName = clientNameTextBox.Text;
-            var place = placeTextBox.Text;
-            var role = roleTextBox.Text;
+            var employeeDataAccessLayer = new EmployeeDataAccessLayer();
+
             var employeeId = employeeIDComboBox.Text;
-
-            var conn = new SqlConnection();
-            conn.ConnectionString =
-                "Data Source=BAIBHAV;" +
-                "Initial Catalog=PioneerConsultancyDatabase;" +
-                "Integrated security = True;";
-
-
-            using (var com = conn.CreateCommand())
+            var projectModel = new ProjectModel
             {
-                com.CommandText = "INSERT INTO ProjectDetail VALUES(@projectName, @clientName,@place,@role,@employeeId)";
-                 
-                com.Parameters.AddWithValue("@projectName", projectName);
-                com.Parameters.AddWithValue("@clientName", clientName);
-                com.Parameters.AddWithValue("@place", place);
-                com.Parameters.AddWithValue("@role", role);
-                com.Parameters.AddWithValue("@employeeId",employeeId);
+                ProjectName = projectNameTextBox.Text,
+                ClientName = clientNameTextBox.Text,
+                Place = placeTextBox.Text,
+                Role = roleTextBox.Text,
 
-                conn.Open();
-                var result = com.ExecuteNonQuery();
+            };
 
-                MessageBox.Show(result > 0 ? "Message Saved Successfully" : "Message Did NOT Saved Successfully");
-
-                conn.Close();
-
-            }
+            var result = employeeDataAccessLayer.SaveProjectDetails(projectModel);
+            MessageBox.Show(result > 0 ? "Message Saved Successfully" : "Message Did NOT Saved Successfully");
         }
+
 
         private void button2_Click(object sender, EventArgs e)
         {
-            var employerName = employerNameTextBox.Text;
-            var contactNumber = contactNumberTextBox.Text;
-            var place = placeCompany.Text;
-            var website = websiteTextBox.Text;
-            var employeeId = employeeIDCompany.Text;
-
-            var conn = new SqlConnection();
-            conn.ConnectionString =
-                "Data Source=BAIBHAV;" +
-                "Initial Catalog=PioneerConsultancyDatabase;" +
-                "Integrated security = True;";
-
-
-            using (var com = conn.CreateCommand())
+            var companyModel = new CompanyModel
             {
-                com.CommandText =
-                    "INSERT INTO CompanyDetail VALUES(@employerName, @contactNumber,@place,@website,@employeeId)";
-
-                com.Parameters.AddWithValue("@employerName", employerName);
-                com.Parameters.AddWithValue("@contactNumber", contactNumber);
-                com.Parameters.AddWithValue("@place", place);
-                com.Parameters.AddWithValue("@website", website);
-                com.Parameters.AddWithValue("@employeeId", employeeId);
-
-                conn.Open();
-                var result = com.ExecuteNonQuery();
-
-                MessageBox.Show(result > 0 ? "Message Saved Successfully" : "Message Did NOT Saved Successfully");
-
-                conn.Close();
-            }
+                EmployerName = employerNameTextBox.Text,
+                ContactNumber = clientNameTextBox.Text,
+                Place = placeTextBox.Text,
+                Website = roleTextBox.Text,
+                EmployeeId = Convert.ToInt32(EmployeeIdComboBoxTextBox.Text)
+            };
+            var employeeDataAccessLayer = new EmployeeDataAccessLayer();
+            var result = employeeDataAccessLayer.SaveCompanyDetails(companyModel);
+            MessageBox.Show(result > 0 ? "Message Saved Successfully" : "Message Did NOT Saved Successfully");
         }
+
 
         private void label21_Click(object sender, EventArgs e)
         {
@@ -224,74 +160,38 @@ namespace PioneerTech.Consultancy.Sys
 
         private void button4_Click(object sender, EventArgs e)
         {
-            var UI = UITextBox.Text;
-            var ProgrammingLanguage = ProgrammingLanguageTextBox.Text;
-            var DatabaseName = DatabaseTextBox.Text;
-            var ORM = ORMTextBox.Text;
-
-            var employeeId = EmployeeIdTechnicalComboBox.Text;
-
-            var conn = new SqlConnection();
-            conn.ConnectionString =
-                "Data Source=BAIBHAV;" +
-                "Initial Catalog=PioneerConsultancyDatabase;" +
-                "Integrated security = True;";
-
-
-            using (var com = conn.CreateCommand())
+            var technicalModel = new TechnicalModel()
             {
-                com.CommandText =
-                    "INSERT INTO TechnicalDetail VALUES(@UI, @ProgrammingLanguage,@DatabaseName,@employeeId)";
-
-                com.Parameters.AddWithValue("@UI", UI);
-                com.Parameters.AddWithValue("@ProgrammingLanguage", ProgrammingLanguage);
-                com.Parameters.AddWithValue("@DatabaseName", DatabaseName);
-               // com.Parameters.AddWithValue("@ORM", ORM);
-                com.Parameters.AddWithValue("@employeeId", employeeId);
-
-                conn.Open();
-                var result = com.ExecuteNonQuery();
-
-                MessageBox.Show(result > 0 ? "Message Saved Successfully" : "Message Did NOT Saved Successfully");
-
-                conn.Close();
-            }
+                UI = UITextBox.Text,
+                ProgrammingLanguage = ProgrammingLanguageTextBox.Text,
+                Database = DatabaseTextBox.Text,
+                EmployeeId = Convert.ToInt32(EmployeeIdTechnicalComboBox.Text)
+            };
+            var employeeDataAccessLayer = new EmployeeDataAccessLayer();
+            var result = employeeDataAccessLayer.SaveTechnicalDetails(technicalModel);
+            MessageBox.Show(result > 0 ? "Message Saved Successfully" : "Message Did NOT Saved Successfully");
         }
 
-        private void button6_Click(object sender, EventArgs e)
-        {
-            var CourseType = CourseTypeTextBox.Text;
-            var YearOfPass = YearOfPassTextBox.Text;
-            var CourseSpecialization = CourseSpecializationTextBox.Text;
-            
-            var employeeId = EmployeeIdEducationComboBox.Text;
+    private void button6_Click(object sender, EventArgs e)
+    {
+    EducationModel educationModel = new EducationModel
+    {
+        CourseType = CourseTypeTextBox.Text,
+        YearOfPass = YearOfPassTextBox.Text,
+        CourseSpecialization = CourseSpecializationTextBox.Text,
+        EmployeeId = Convert.ToInt32(EmployeeIdEducationComboBox.Text)
+    };
 
-            var conn = new SqlConnection();
-            conn.ConnectionString =
-                "Data Source=BAIBHAV;" +
-                "Initial Catalog=PioneerConsultancyDatabase;" +
-                "Integrated security = True;";
+    var employeeDataAccessLayer = new EmployeeDataAccessLayer();
+    var result = employeeDataAccessLayer.SaveEducationDetail(educationModel);
 
+    MessageBox.Show(result > 0 ? "Message Saved Successfully" : "Message Did NOT Saved Successfully");
+    }
 
-            using (var com = conn.CreateCommand())
-            {
-                com.CommandText =
-                    "INSERT INTO EducationDetail VALUES(@CourseType, @YearOfPass,@CourseSpecialization,@employeeId)";
-
-                com.Parameters.AddWithValue("@CourseType", CourseType);
-                com.Parameters.AddWithValue("@YearOfPass", YearOfPass);
-                com.Parameters.AddWithValue("@CourseSpecialization",CourseSpecialization);
-                com.Parameters.AddWithValue("@employeeId", employeeId);
-
-                conn.Open();
-                var result = com.ExecuteNonQuery();
-
-                MessageBox.Show(result > 0 ? "Message Saved Successfully" : "Message Did NOT Saved Successfully");
-
-                conn.Close();
-            }
-        }
+    private void employeeIDCompany_SelectedIndexChanged(object sender, EventArgs e)
+    {
 
     }
 }
 
+}

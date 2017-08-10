@@ -4,12 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PioneerTech.Consultancy.DAL
+namespace MyClassLibraryProject
 {
-    public class SQLConnect
+    public class Class1
     {
-
-
-
     }
 }

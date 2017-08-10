@@ -1,0 +1,5 @@
+C:\Users\Baibhav\Documents\Visual Studio 2017\Projects\PioneerTech.Consultancy.Sys\MyClassLibraryProject\bin\Release\MyClassLibraryProject.dll
+C:\Users\Baibhav\Documents\Visual Studio 2017\Projects\PioneerTech.Consultancy.Sys\MyClassLibraryProject\bin\Release\MyClassLibraryProject.pdb
+C:\Users\Baibhav\Documents\Visual Studio 2017\Projects\PioneerTech.Consultancy.Sys\MyClassLibraryProject\obj\Release\MyClassLibraryProject.csprojResolveAssemblyReference.cache
+C:\Users\Baibhav\Documents\Visual Studio 2017\Projects\PioneerTech.Consultancy.Sys\MyClassLibraryProject\obj\Release\MyClassLibraryProject.dll
+C:\Users\Baibhav\Documents\Visual Studio 2017\Projects\PioneerTech.Consultancy.Sys\MyClassLibraryProject\obj\Release\MyClassLibraryProject.pdb

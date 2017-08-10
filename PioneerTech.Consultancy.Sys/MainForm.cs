@@ -19,9 +19,9 @@ namespace PioneerTech.Consultancy.Sys
 
         private void button2_Click(object sender, EventArgs e)
         {
-           EmployeeInformationForm  employeeInformationForm = new EmployeeInformationForm();
+            
+            EmployeeInformationForm  employeeInformationForm = new EmployeeInformationForm();
             employeeInformationForm.Show();
-
         }
 
         public void viewEmployee_click(object sender, EventArgs e)

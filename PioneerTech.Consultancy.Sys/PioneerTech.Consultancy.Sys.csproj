@@ -96,5 +96,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyClassLibraryProject\PioneerTech.Models.csproj">
+      <Project>{b29525c8-a369-451c-be12-a7ebab264403}</Project>
+      <Name>PioneerTech.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PioneerTech.Consultancy.DAL\PioneerTech.Consultancy.DAL.csproj">
+      <Project>{63467b6d-c869-4b10-a5a5-a467e6ecd3fd}</Project>
+      <Name>PioneerTech.Consultancy.DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

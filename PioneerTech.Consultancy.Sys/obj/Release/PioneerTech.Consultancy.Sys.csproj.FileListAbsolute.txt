@@ -8,3 +8,8 @@ C:\Users\Baibhav\documents\visual studio 2017\Projects\PioneerTech.Consultancy.S
 C:\Users\Baibhav\documents\visual studio 2017\Projects\PioneerTech.Consultancy.Sys\PioneerTech.Consultancy.Sys\obj\Release\PioneerTech.Consultancy.Sys.csprojResolveAssemblyReference.cache
 C:\Users\Baibhav\documents\visual studio 2017\Projects\PioneerTech.Consultancy.Sys\PioneerTech.Consultancy.Sys\obj\Release\PioneerTech.Consultancy.Sys.EmployeeInformationForm.resources
 C:\Users\Baibhav\documents\visual studio 2017\Projects\PioneerTech.Consultancy.Sys\PioneerTech.Consultancy.Sys\obj\Release\PioneerTech.Consultancy.Sys.MainForm.resources
+C:\Users\Baibhav\Documents\Visual Studio 2017\Projects\PioneerTech.Consultancy.Sys\PioneerTech.Consultancy.Sys\bin\Release\PioneerTech.Consultancy.DAL.dll
+C:\Users\Baibhav\Documents\Visual Studio 2017\Projects\PioneerTech.Consultancy.Sys\PioneerTech.Consultancy.Sys\bin\Release\PioneerTech.Consultancy.DAL.pdb
+C:\Users\Baibhav\Documents\Visual Studio 2017\Projects\PioneerTech.Consultancy.Sys\PioneerTech.Consultancy.Sys\obj\Release\PioneerTech.Consultancy.Sys.EmployeeDashboard.resources
+C:\Users\Baibhav\Documents\Visual Studio 2017\Projects\PioneerTech.Consultancy.Sys\PioneerTech.Consultancy.Sys\bin\Release\PioneerTech.Models.dll
+C:\Users\Baibhav\Documents\Visual Studio 2017\Projects\PioneerTech.Consultancy.Sys\PioneerTech.Consultancy.Sys\bin\Release\PioneerTech.Models.pdb

@@ -9,3 +9,7 @@ C:\Users\Baibhav\Documents\Visual Studio 2017\Projects\PioneerTech.Consultancy.S
 C:\Users\Baibhav\documents\visual studio 2017\Projects\PioneerTech.Consultancy.Sys\PioneerTech.Consultancy.Sys\obj\Debug\PioneerTech.Consultancy.Sys.EmployeeInformationForm.resources
 C:\Users\Baibhav\documents\visual studio 2017\Projects\PioneerTech.Consultancy.Sys\PioneerTech.Consultancy.Sys\obj\Debug\PioneerTech.Consultancy.Sys.MainForm.resources
 C:\Users\Baibhav\documents\visual studio 2017\Projects\PioneerTech.Consultancy.Sys\PioneerTech.Consultancy.Sys\obj\Debug\PioneerTech.Consultancy.Sys.EmployeeDashboard.resources
+C:\Users\Baibhav\documents\visual studio 2017\Projects\PioneerTech.Consultancy.Sys\PioneerTech.Consultancy.Sys\bin\Debug\PioneerTech.Consultancy.DAL.dll
+C:\Users\Baibhav\documents\visual studio 2017\Projects\PioneerTech.Consultancy.Sys\PioneerTech.Consultancy.Sys\bin\Debug\PioneerTech.Consultancy.DAL.pdb
+C:\Users\Baibhav\Documents\Visual Studio 2017\Projects\PioneerTech.Consultancy.Sys\PioneerTech.Consultancy.Sys\bin\Debug\PioneerTech.Models.dll
+C:\Users\Baibhav\Documents\Visual Studio 2017\Projects\PioneerTech.Consultancy.Sys\PioneerTech.Consultancy.Sys\bin\Debug\PioneerTech.Models.pdb

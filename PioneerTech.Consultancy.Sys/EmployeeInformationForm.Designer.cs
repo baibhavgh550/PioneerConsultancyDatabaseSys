@@ -71,7 +71,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tabCompanyDetail = new System.Windows.Forms.TabPage();
             this.label6 = new System.Windows.Forms.Label();
-            this.employeeIDCompany = new System.Windows.Forms.ComboBox();
+            this.EmployeeIdComboBoxTextBox = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.websiteTextBox = new System.Windows.Forms.TextBox();
@@ -517,7 +517,7 @@
             // tabCompanyDetail
             // 
             this.tabCompanyDetail.Controls.Add(this.label6);
-            this.tabCompanyDetail.Controls.Add(this.employeeIDCompany);
+            this.tabCompanyDetail.Controls.Add(this.EmployeeIdComboBoxTextBox);
             this.tabCompanyDetail.Controls.Add(this.button1);
             this.tabCompanyDetail.Controls.Add(this.button2);
             this.tabCompanyDetail.Controls.Add(this.websiteTextBox);
@@ -544,13 +544,14 @@
             this.label6.TabIndex = 36;
             this.label6.Text = "Employee ID";
             // 
-            // employeeIDCompany
+            // EmployeeIdComboBoxTextBox
             // 
-            this.employeeIDCompany.FormattingEnabled = true;
-            this.employeeIDCompany.Location = new System.Drawing.Point(201, 188);
-            this.employeeIDCompany.Name = "employeeIDCompany";
-            this.employeeIDCompany.Size = new System.Drawing.Size(100, 21);
-            this.employeeIDCompany.TabIndex = 35;
+            this.EmployeeIdComboBoxTextBox.FormattingEnabled = true;
+            this.EmployeeIdComboBoxTextBox.Location = new System.Drawing.Point(201, 188);
+            this.EmployeeIdComboBoxTextBox.Name = "EmployeeIdComboBoxTextBox";
+            this.EmployeeIdComboBoxTextBox.Size = new System.Drawing.Size(100, 21);
+            this.EmployeeIdComboBoxTextBox.TabIndex = 35;
+            this.EmployeeIdComboBoxTextBox.SelectedIndexChanged += new System.EventHandler(this.employeeIDCompany_SelectedIndexChanged);
             // 
             // button1
             // 
@@ -958,7 +959,7 @@
         private System.Windows.Forms.Label labelComboBox;
         private System.Windows.Forms.ComboBox employeeIDComboBox;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox employeeIDCompany;
+        private System.Windows.Forms.ComboBox EmployeeIdComboBoxTextBox;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox websiteTextBox;
