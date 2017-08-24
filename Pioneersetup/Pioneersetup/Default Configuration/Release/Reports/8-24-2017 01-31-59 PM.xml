@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="C:\Program Files (x86)\InstallShield\2016\Support\0409\buildreport.xsl"?>
+<BuildReport ProductName="Pioneersetup" ProductVersion="1.00.0000" Built="8-24-2017 01-31-59 PM" Config="Default Configuration" Media="Release" Uncompressed="0.00 MB">
+  <Features>
+    <Feature Title="##IDS_FEATURE_DISPLAY_NAME1##">Pioneersetup_Files</Feature>
+  </Features>
+  <Components>
+    <Component x64="32">AllOtherFiles</Component>
+    <Component x64="32" KeyPath="pioneertech.consultancy.dal.">PioneerTech.Consultancy.DAL.dll</Component>
+    <Component x64="32" KeyPath="pioneertech.consultancy.sys.">PioneerTech.Consultancy.Sys.exe</Component>
+    <Component x64="32" KeyPath="_9980A561FABD60AFF85BC66D11D19EE6">_5422AD061A7135CA903238689235FC86</Component>
+  </Components>
+  <Prerequisites />
+  <MergeModules />
+  <DynamicLinks />
+  <Files>
+    <File Destination="{INSTALLDIR} [ProgramFilesFolder]Pioneer\My Product Name" Component="AllOtherFiles" Modified="8/24/2017 11:27:07 AM" Size="13824" Version="">PioneerTech.Consultancy.DAL.pdb</File>
+    <File Destination="{INSTALLDIR} [ProgramFilesFolder]Pioneer\My Product Name" Component="AllOtherFiles" Modified="8/24/2017 12:09:44 PM" Size="719" Version="">PioneerTech.Consultancy.Sys.exe.config</File>
+    <File Destination="{INSTALLDIR} [ProgramFilesFolder]Pioneer\My Product Name" Component="AllOtherFiles" Modified="8/24/2017 1:31:18 PM" Size="52736" Version="">PioneerTech.Consultancy.Sys.pdb</File>
+    <File Destination="{INSTALLDIR} [ProgramFilesFolder]Pioneer\My Product Name" Component="PioneerTech.Consultancy.DAL.dll" Modified="8/24/2017 11:27:07 AM" Size="9216" Version="1.0.0.0">PioneerTech.Consultancy.DAL.dll</File>
+    <File Destination="{INSTALLDIR} [ProgramFilesFolder]Pioneer\My Product Name" Component="_5422AD061A7135CA903238689235FC86" Modified="8/24/2017 11:27:05 AM" Size="8704" Version="1.0.0.0">PioneerTech.Models.dll</File>
+    <File Destination="{INSTALLDIR} [ProgramFilesFolder]Pioneer\My Product Name" Component="PioneerTech.Consultancy.Sys.exe" Modified="8/24/2017 1:31:18 PM" Size="35328" Version="1.0.0.0">PioneerTech.Consultancy.Sys.exe</File>
+  </Files>
+</BuildReport>

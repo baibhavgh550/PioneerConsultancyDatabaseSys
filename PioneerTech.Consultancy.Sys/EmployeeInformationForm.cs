@@ -11,6 +11,10 @@ using System.Data.SqlClient;
 using MyClassLibraryProject.Model;
 using PioneerTech.Consultancy.DAL;
 using PioneerTech.Models.Model;
+using PioneerTech.Consultancy.Sys.PioneerTechWebServiceReference;
+
+
+
 
 
 namespace PioneerTech.Consultancy.Sys
@@ -86,10 +90,13 @@ namespace PioneerTech.Consultancy.Sys
                 ZipCode = Convert.ToInt64(textBoxZipCode.Text)
             };
 
-            var employeeDataAccessLayer = new EmployeeDataAccessLayer();
-            var result = employeeDataAccessLayer.SaveEmployeeDetails(employeeModel);
+            
+            var pioneerTechWebServiceReference = new Service1Client();
+            pioneerTechWebServiceReference.SaveEmployee(employeeModel);
 
-            MessageBox.Show(result > 0 ? "Message Saved Successfully" : "Message Did NOT Saved Successfully");
+
+
+            /* MessageBox.Show(result > 0 ? "Message Saved Successfully" : "Message Did NOT Saved Successfully");*/
 
         }
 

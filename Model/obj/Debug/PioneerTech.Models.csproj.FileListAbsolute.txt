@@ -1,0 +1,4 @@
+C:\Users\Baibhav\Documents\Visual Studio 2017\Projects\PioneerTech.Consultancy.Sys\MyClassLibraryProject\bin\Debug\PioneerTech.Models.dll
+C:\Users\Baibhav\Documents\Visual Studio 2017\Projects\PioneerTech.Consultancy.Sys\MyClassLibraryProject\bin\Debug\PioneerTech.Models.pdb
+C:\Users\Baibhav\Documents\Visual Studio 2017\Projects\PioneerTech.Consultancy.Sys\MyClassLibraryProject\obj\Debug\PioneerTech.Models.dll
+C:\Users\Baibhav\Documents\Visual Studio 2017\Projects\PioneerTech.Consultancy.Sys\MyClassLibraryProject\obj\Debug\PioneerTech.Models.pdb

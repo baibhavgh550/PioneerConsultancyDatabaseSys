@@ -1,0 +1,10 @@
+C:\Users\Baibhav\Documents\Visual Studio 2017\Projects\PioneerTech.Consultancy.Sys\PioneerTechWebService\bin\PioneerTechWebService.dll.config
+C:\Users\Baibhav\Documents\Visual Studio 2017\Projects\PioneerTech.Consultancy.Sys\PioneerTechWebService\bin\PioneerTechWebService.dll
+C:\Users\Baibhav\Documents\Visual Studio 2017\Projects\PioneerTech.Consultancy.Sys\PioneerTechWebService\bin\PioneerTechWebService.pdb
+C:\Users\Baibhav\Documents\Visual Studio 2017\Projects\PioneerTech.Consultancy.Sys\PioneerTechWebService\bin\PioneerTech.Consultancy.DAL.dll
+C:\Users\Baibhav\Documents\Visual Studio 2017\Projects\PioneerTech.Consultancy.Sys\PioneerTechWebService\bin\PioneerTech.Models.dll
+C:\Users\Baibhav\Documents\Visual Studio 2017\Projects\PioneerTech.Consultancy.Sys\PioneerTechWebService\bin\PioneerTech.Consultancy.DAL.pdb
+C:\Users\Baibhav\Documents\Visual Studio 2017\Projects\PioneerTech.Consultancy.Sys\PioneerTechWebService\bin\PioneerTech.Models.pdb
+C:\Users\Baibhav\Documents\Visual Studio 2017\Projects\PioneerTech.Consultancy.Sys\PioneerTechWebService\obj\Release\PioneerTechWebService.csprojResolveAssemblyReference.cache
+C:\Users\Baibhav\Documents\Visual Studio 2017\Projects\PioneerTech.Consultancy.Sys\PioneerTechWebService\obj\Release\PioneerTechWebService.dll
+C:\Users\Baibhav\Documents\Visual Studio 2017\Projects\PioneerTech.Consultancy.Sys\PioneerTechWebService\obj\Release\PioneerTechWebService.pdb
